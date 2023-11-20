@@ -1,0 +1,185 @@
+$color:#FF6F48;
+$color1:#F02AA6 ;
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    // border: 1px solid red;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        button{
+            padding: 15px 30px;
+            border-radius: 50px ;
+            border: none;
+            background:  #13183F;
+            color: white;
+            &:hover{
+                background: 
+                #666CA3;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+.hero{
+    position: relative;
+    // border: 1px solid red;
+    .rasm{
+        position: absolute;
+        top: -100px;
+        right:  -240px;
+    }
+    .rasm1{
+        display: none;
+    }
+}
+.hero_title{
+//   margin-top: 100px;
+  padding: 20px;
+    h1{
+        font-size: 50px;
+        color:  #13183F;
+        margin-top: 120px;
+
+    }
+    p{
+        width: 390px;
+        font-size: 19px;
+        margin-top: 40px;
+    }
+    button{
+        padding: 15px 30px;
+        border-radius: 50px ;
+        border: none;
+      
+        background: linear-gradient( $color , $color1);
+        color: white; 
+        margin-top: 40px;
+        cursor: pointer;
+        &:hover{
+         opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.section_card{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 200px;
+   flex-wrap: wrap;
+    .cards{
+        background: linear-gradient( $color, $color1 );
+        h1{
+            font-size: 35px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+         
+           padding: 40px 0px 150px 30px;
+            color: white;
+        }
+    }
+    .card{
+        width: 350px;
+        padding: 20PX;
+        border: none;
+        border-radius: 10px;
+        // border: 1px solid red;
+        box-shadow: 2px 2px 10px 1px #83869A;
+        position: relative;
+        
+        .card_img{
+            position: absolute;
+            top: -30px;
+            left: 30px;
+           
+        }
+        .card_title{
+            h1{
+                padding-top: 30px;
+                padding-bottom: 20px;
+                color: #13183F;
+            }
+            p{
+                color: 
+                #83869A;
+                width: 250PX;
+                line-height: 30px;
+                margin-top: 20px;
+             
+            }
+        h2{
+            color:$color ;
+            margin-top: 50px;
+        }
+        }
+    }
+}
+footer{
+    background: #13183F;
+
+.footer_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 150px;
+    
+    button{
+        padding: 15px 30px;
+        border-radius: 50px ;
+        border: none;
+        background: linear-gradient($color1, $color  );
+        
+        color: white;
+        &:hover{
+            opacity: 0.6;
+               cursor: pointer;
+           }
+
+    }
+}
+
+}
+@media(max-width:467px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .rasm img{
+       display: none;
+    }
+    .section_card{
+        width: 100%;
+
+    }
+.cards {
+padding: 10px ;
+
+
+}
+.cards h1{
+     font-size: 10px;
+     
+  
+}
+
+    
+    .hero .rasm1{
+        display: block;
+        text-align: center;
+    }
+
+}
